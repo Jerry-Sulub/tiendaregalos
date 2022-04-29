@@ -3,7 +3,7 @@
 require_once "config/config.php";
 	require_once "config/routes.php";
 	require_once "config/database.php";
-	require_once "controllers/Vehiculos.php";
+	require_once "controllers/Home.php";
 	
 	if(isset($_GET['c'])){
 		
