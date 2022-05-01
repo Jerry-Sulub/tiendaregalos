@@ -69,7 +69,7 @@ Sistema tienda de regalos en MVC
 </p>
 
 
-<h3>Eliminar</h3>
+<h3>Editar</h3>
 <h4>Responsable: Jose</h4>
 <p>
     Editar producto mediante un ID especificado, así como <br>
