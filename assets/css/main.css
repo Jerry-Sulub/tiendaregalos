@@ -1,6 +1,18 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .titulo {
     display: block;
     margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;
+}
+.ancho{
+    width: 1200px;
+}
+.head{
+    background-color: rgba(255, 230, 0, 0.966);
+    
 }
