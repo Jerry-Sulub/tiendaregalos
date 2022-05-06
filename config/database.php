@@ -11,7 +11,7 @@
 		public static function conexion(){
 			
 			/*Conexion */
-			$conexion = new mysqli("localhost", "root", "pass", "tiendaregalos");
+			$conexion = new mysqli("localhost", "root", "", "tiendaregalos");
 			return $conexion;
 			
 		}
