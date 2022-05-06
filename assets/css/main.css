@@ -8,6 +8,7 @@
     margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;
+<<<<<<< HEAD
 }
 .ancho{
     width: 1200px;
@@ -16,4 +17,6 @@
 .head{
     background-color: rgba(255, 230, 0, 0.966);
     
+=======
+>>>>>>> bfc24868d98b582eb0f1cd7a9800729175ff03df
 }
