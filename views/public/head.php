@@ -10,10 +10,5 @@
         <input type="submit" value="Buscar">
       </form>
     </div>
-    <div class="menu">
-      <a href="#">Productos</a>
-      <a href="#">Entregas sorpresa</a>
-      <a href="#">Contáctanos</a>
-    </div>
   </div>
 </div>
