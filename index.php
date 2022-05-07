@@ -21,6 +21,7 @@
 		
 		} else {
 		
+			//y
 		$controlador = cargarControlador(CONTROLADOR_PRINCIPAL);
 		$accionTmp = ACCION_PRINCIPAL;
 		$controlador->$accionTmp();

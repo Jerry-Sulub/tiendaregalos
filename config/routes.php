@@ -33,4 +33,3 @@
 			$controller->ACCION_PRINCIPAL();
 		}	
 	}
-?>
