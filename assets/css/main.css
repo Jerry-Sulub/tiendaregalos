@@ -11,12 +11,12 @@ body{
     margin: auto;
 }
 .head{
-    background-color: rgba(255, 230, 0, 0.966);
+    background-color: beige;
+    border-bottom: 3px solid rgb(245, 200, 0);
 }
 .logo{
     display: inline-block;
     padding: 10px 5px;
-    border: 1px solid;
     width: 250px;
     text-align: center;
 }
@@ -25,19 +25,36 @@ body{
 }
 .busqueda{
     display: inline-block;
-    width: 400px;
-    border: 1px solid;
+    width: 450px;
     text-align: center;
+    vertical-align: 25px;
+}
+input[type="text"]{
+    border: #ccc 1px solid;
+    padding: 10px 5px; 
+    width: 330px;
+}
+input[type="submit"]{
+    border: none;
+    border-radius: 3px;
+    padding: 12px 30px;
+    background-color: rgb(245, 200, 0);
+    color: white;
+    font-weight: 600;
 }
 .menu{
     display: inline-block;
-    width: 500px;
-    border: 1px solid;
-    text-align: center;
+    width: 450px;
+    text-align: right;
 }
 .menu a{
     text-decoration: none;
-    color: white;
+    color: #333;
     font-weight: bold;
-    margin: 5px 0px;
+    margin: 10px;
+    vertical-align: 25px;
+}
+.menu a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(245, 200, 0);
 }
