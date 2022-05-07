@@ -12,5 +12,6 @@
         include "head.php";
     ?>
     <script src="assets/js/main.js"></script>
+    <img src="resources/2022-05-07-04-56-04Captura de pantalla (5).png" alt="" srcset="">
 </body>
 </html>
