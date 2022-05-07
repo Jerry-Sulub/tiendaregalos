@@ -10,7 +10,7 @@
       <a href="#">Eliminar</a>
     </div>
     <div class="cerrar">
-      <a href="">Cerrar Sesión</a>
+      <a href="">Cerrar sesión</a>
     </div>
   </div>
 </div>
