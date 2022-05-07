@@ -11,6 +11,7 @@
     <?php
         include "head.php";
     ?>
+
     <div class="ancho">
     <?php
             foreach($data["productos"] as $dato){

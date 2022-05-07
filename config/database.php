@@ -9,10 +9,13 @@
 	class Conectar {
 		
 		public static function conexion(){
-			
-			$conexion = new mysqli("localhost", "root", "", "anadru");
+			$conexion = new mysqli(
+				"localhost", 
+				"root", 
+				"", 
+				"tiendaregalos"
+			);
 			return $conexion;
-			
 		}
 	}
 ?>
