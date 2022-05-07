@@ -43,7 +43,7 @@
 							echo "<td>".$dato["precio"]."</td>";
                             echo "<td>".$dato["img"]."</td>";
 							echo "<td>".$dato["tipo"]."</td>";
-							echo "<td><a href='index.php?c=eliminar&a=eliminar&ID=".$dato["ID"]."' class='btn btn-danger'>Eliminar</a></td>";
+							echo "<td><a href='index.php?c=home&a=eliminar&id=".$dato["ID"]."' class='btn btn-danger'>Eliminar</a></td>";
 							echo "</tr>";
 						}
 						?>
@@ -51,7 +51,5 @@
 				</table>
 			</div>
 		</div>
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
