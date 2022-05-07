@@ -10,7 +10,7 @@
 		
 		public static function conexion(){
 			
-			$conexion = new mysqli("host", "user", "pass", "dbname");
+			$conexion = new mysqli("localhost", "root", "", "anadru");
 			return $conexion;
 			
 		}

@@ -107,18 +107,18 @@ input[type="submit"]:hover{
 /*****************home********************/
 .vistaProducto{
     display: inline-block;
-    width: 290px;
+    width: 285px;
     height: 360px;
     box-shadow: 0px 1px 5px #aaa;
     border-radius: 5px;
     text-align: center;
     margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .imgProducto{
     width: 260px;
     height: 205px;
-    box-shadow: 0px 1px 5px #aaa;
-    border-radius: 5px;
     text-align: center;
     margin: 0 auto;
     margin-top: 10px;
