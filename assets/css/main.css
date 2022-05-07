@@ -3,13 +3,15 @@
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: Helvetica;
+}
 .ancho{
     width: 1200px;
     margin: auto;
 }
 .head{
     background-color: rgba(255, 230, 0, 0.966);
-    border-bottom: 5px solid black;
 }
 .logo{
     display: inline-block;
@@ -37,4 +39,5 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+    margin: 5px 0px;
 }
