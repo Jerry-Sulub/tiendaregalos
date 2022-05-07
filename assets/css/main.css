@@ -58,3 +58,34 @@ input[type="submit"]{
     padding-bottom: 5px;
     border-bottom: 2px solid rgb(245, 200, 0);
 }
+.menuPanel{
+    display: inline-block;
+    width: 800px;
+    text-align: center;
+}
+.menuPanel a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 20px;
+    vertical-align: 25px;
+}
+.menuPanel a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(245, 200, 0);
+}
+.cerrar{
+    display: inline-block;
+    width: 120px;
+    vertical-align: 25px;
+    text-align: center;
+}
+.cerrar a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.cerrar a:hover{
+    color: rgb(245, 200, 0);
+    font-weight: bold;
+}
