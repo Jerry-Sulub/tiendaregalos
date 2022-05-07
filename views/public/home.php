@@ -12,7 +12,16 @@
         include "head.php";
     ?>
     <div class="ancho">
-        
+        <div class="vistaProducto">
+            <div class="imgProducto">
+                <img src="" alt="">
+            </div>
+            <div class="infoProducto">
+                <p class="nombre">vasos</p>
+                <p class="precio">$</p>
+                <a href="#">Ver producto</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
