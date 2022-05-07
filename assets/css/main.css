@@ -3,16 +3,29 @@
     padding: 0;
     margin: 0;
 }
-.titulo {
-    display: block;
-    margin: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
-}
 .ancho{
     width: 1200px;
+    margin: auto;
 }
 .head{
     background-color: rgba(255, 230, 0, 0.966);
+<<<<<<< HEAD
     
+=======
+}
+.logo{
+    padding: 10px 5px;
+}
+.logo img{
+    display: inline-block;
+    width: 200px;
+}
+.busqueda{
+    display: inline-block;
+    width: 400px;
+}
+.menu{
+    display: inline-block;
+    width: 595px;
+>>>>>>> a54ff9675764b811f83ae22f290a0e83cd7f8d84
 }
