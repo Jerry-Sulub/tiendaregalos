@@ -1,4 +1,3 @@
-
 <div class="head">
   <div class="ancho">
     <div class="logo">
@@ -6,7 +5,7 @@
     </div>
     <div class="menuPanel">
       <a href="addproductos.html">Agregar</a>
-      <a href="#">Actualizar</a>
+      <a href="actualizar.html">Actualizar</a>
       <a href="#">Eliminar</a>
     </div>
     <div class="cerrar">
