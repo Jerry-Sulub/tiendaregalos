@@ -94,8 +94,11 @@ input[type="submit"]:hover{
 }
 .cerrar a{
     text-decoration: none;
-    color: #333;
     font-weight: bold;
+    background-color: rgb(248, 181, 36);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 .cerrar a:hover{
     background-color: rgb(245, 200, 0);

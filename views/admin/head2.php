@@ -5,7 +5,7 @@
       <img src="../../assets/images/logo_anadru.png" alt="">
     </div>
     <div class="menuPanel">
-      <a href="#">Agregar</a>
+      <a href="addproductos.html">Agregar</a>
       <a href="#">Actualizar</a>
       <a href="#">Eliminar</a>
     </div>

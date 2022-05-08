@@ -11,7 +11,7 @@
 <div class="ancho">
     <div class="login">
       <img src="../../assets/images/logo_anadru.png" alt="">
-      <form action="auatenticarse.php" method="POST">
+      <form action="#" method="POST">
         <input type="text" name="user" placeholder="Usuario" id="user" required>
         <input type="password" name="pass" id="pass" placeholder="**********" required>
         <input type="submit" value="Ingresar">
