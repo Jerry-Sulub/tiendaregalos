@@ -11,13 +11,13 @@ class Anadru_model {
     $this->productos = array();
   }
   
-  public function get_usuario($usuario, $password)
+  /* public function get_usuario($usuario, $password)
   {
     $comparar = "SELECT * FROM usuario WHERE nombre='$usuario' AND pass='$password'";
     $resultado = $this->db->query($comparar);
     $row = $resultado->fetch_assoc();
     return $this->usuario;
-  }
+  } */
 
   public function get_productos()
   {

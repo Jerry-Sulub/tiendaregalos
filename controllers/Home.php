@@ -14,7 +14,13 @@ class HomeController {
 	    $data["productos"] = $productos->get_productos();
 
         require_once "views/public/home.php";
+    }
+    public function panel()
+    {
+        $productos = new Anadru_model();
+	    $data["productos"] = $productos->get_productos();
 
+        require_once "views/admin/panel.php";
     }
 
     /* Vista */
