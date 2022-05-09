@@ -5,7 +5,7 @@
     </div>
     <div class="menuPanel">
       <a href="addproductos.html">Agregar</a>
-      <a href="actualizar.html">Actualizar</a>
+      <a href="">Actualizar</a>
       <a href="#">Eliminar</a>
     </div>
     <div class="cerrar">
