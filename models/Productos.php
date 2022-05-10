@@ -27,7 +27,7 @@ class ProductosModel
         return $flag;
     }
 
-    public function getProductos()
+    public function getProducts()
     {
         $sql = "SELECT * FROM productos";
         $resultado = $this->db->query($sql);
@@ -37,15 +37,14 @@ class ProductosModel
         return $this->productos;
     }
 
-    public function delete($id){
+    public function deleteProduct($id){
         $link = $this->db->query("SELECT img FROM productos WHERE ID = '$id'");
         $result = $link->fetch_assoc()['img'];
         unlink($result);
         $resultado = $this->db->query("DELETE FROM productos WHERE ID = '$id'");
     }
 
-    //llamar a imprimir en formulario
-    public function get_Productos($id)
+    public function getProduct($id)
     {
         $sql = "SELECT * FROM productos WHERE id = '$id' LIMIT 1";
         $resultado = $this->db->query($sql);
