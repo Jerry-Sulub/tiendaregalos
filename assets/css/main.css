@@ -201,28 +201,6 @@ input[type="submit"]:hover{
     margin-bottom: 10px;
 }
 
-/********FOOT**********/
-.foot{
-    margin-top: 20px;
-    background-color: beige;
-    border-top: 3px solid rgb(245, 200, 0);
-}
-.contactos{
-    display: inline-block;
-    width: 390px;
-    margin: 2px;
-    border: 1px solid;
-}
-.contactos a{
-    display: inline-block;
-    padding: 8px 1px;
-    width: 20px;
-    text-align: left;
-}
-.contactos a img{
-    width: 40px;
-}
-
 /**************Tabla panel***************/
 .tablaPanel{
     width: 1000px;
