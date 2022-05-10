@@ -243,3 +243,6 @@ input[type="submit"]:hover{
     padding: 5px;
     text-align: center;
 }
+td img{
+    width: 100px
+}
