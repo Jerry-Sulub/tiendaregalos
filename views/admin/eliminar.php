@@ -7,16 +7,6 @@
     }
     include "template/header.php";
 ?>
-<div class="head">
-    <div class="ancho">
-        <div class="busqueda">
-            <form action="" id="busqueda" method="POST">
-                <input type="text" name="buscador" placeholder="Estoy buscando...">
-                <input type="submit" value="Buscar">
-            </form>
-        </div>
-    </div>
-</div>
 
 <div>
 			<div>
