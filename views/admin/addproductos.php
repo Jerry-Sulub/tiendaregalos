@@ -10,6 +10,7 @@
 
     <form action="index.php?c=home&a=guardar" class="text-center" enctype="multipart/form-data" method="post"
         name="producto">
+        
         <div class="form-group">
             <label for="name">Nombre</label>
             <input type="text" class="text-center" id="name" name="nombre">

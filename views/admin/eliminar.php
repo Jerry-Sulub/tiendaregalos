@@ -30,6 +30,8 @@
 							<th>Precio</th>
 							<th>Imagen</th>
 							<th>Tipo</th>
+							<th>Editar</th>
+							<th>Eliminar</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -42,6 +44,9 @@
 							echo "<td>".$dato["precio"]."</td>";
                             echo "<td><img src=".$dato["img"]." ></td>";
 							echo "<td>".$dato["tipo"]."</td>";
+
+							echo "<td><a href='index.php?c=home&a=modificar&id=".$dato["ID"]."' class='btn btn-danger'>Modificar</a></td>";
+							
 							echo "<td><a href='index.php?c=home&a=eliminar&id=".$dato["ID"]."' class='btn btn-danger'>Eliminar</a></td>";
 							echo "</tr>";
 						}
