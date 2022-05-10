@@ -23,7 +23,7 @@ class SecureController
             $_SESSION['auth'] = 1;
             header('location: index.php?c=admin');
         }else{
-            header('location: index.php?c=secure&a=index');
+            header('location: index.php?c=secure');
         }
     }
 }
