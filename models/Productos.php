@@ -35,6 +35,9 @@ class ProductosModel
     }
 
     public function delete($id){
+        $link = $this->db->query("SELECT img FROM productos WHERE ID = '$id'");
+        $result = $link->fetch_assoc()['img'];
+        unlink($result);
         $resultado = $this->db->query("DELETE FROM productos WHERE ID = '$id'");
     }
 }
