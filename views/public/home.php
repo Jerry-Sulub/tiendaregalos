@@ -40,15 +40,13 @@
                         echo $dato["precio"];
                         ?>
                     </p>
-                    <a href="index.php?c=home&a=delete">Ver producto</a>
+                    <a href="#">Ver producto</a>
                 </div>
             </div>
         <?php
         }
         ?>
     </div>
-    <!-- Boton agregar -->
-    <a class="btn_agregar" href="index.php?c=home&a=nuevo">Agregar</a>
     <br>
 </body>
 

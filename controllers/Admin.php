@@ -22,7 +22,7 @@ class AdminController
     {
         $productos = new ProductosModel();
 	    $data["productos"] = $productos->getProducts();
-        require_once 'views/admin/home.php';
+        require_once 'views/admin/panel.php';
     }
 
     /**
