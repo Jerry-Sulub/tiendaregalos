@@ -19,6 +19,8 @@ class SecureController
         $pass1 = User::getPassUser($user);
         if(md5($pass) == $pass1)
         {
+            session_start();
+            $_SESSION['auth'] = 1;
             header('location: index.php?c=admin');
         }else{
             header('location: index.php?c=secure&a=index');

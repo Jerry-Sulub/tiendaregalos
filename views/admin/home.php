@@ -1,6 +1,12 @@
 <?php
-        include "template/header.php";
-    ?>
+
+    session_start();
+    if(!isset($_SESSION['auth']))
+    {
+        header('location: index.php?c=secure');
+    }
+    include "template/header.php";
+?>
 
     <div class="ancho">
     <?php

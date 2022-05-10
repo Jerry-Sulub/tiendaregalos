@@ -10,5 +10,3 @@ class User
         return $re->fetch_assoc()['password'];
     }
 }
-
-echo md5('password');
