@@ -6,6 +6,7 @@ class HomeController {
     {
         //Agregar el archivo de modelo
         require_once "models/AnadruModel.php";
+        require_once "models/RegalosModel.php";
     }
 
     public function index()
@@ -58,9 +59,9 @@ class HomeController {
 
     public function delete()
     {
-    $regalos = new tiendaRegalos_model();
-			$data["regalos"] = $regalos->get_regalos();
-			require_once "views/public/eliminar.php";
+        $regalos = new tiendaRegalos_model();
+		$data["regalos"] = $regalos->get_regalos();
+		require_once "views/public/eliminar.php";
     }
 
     public function eliminar($id){
