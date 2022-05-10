@@ -8,7 +8,7 @@ include "template/header.php";
 ?>
 <div class="ancho">
     <div class="agregar">
-        <form action="index.php?c=home&a=guardar" class="text-center" enctype="multipart/form-data" method="post" name="producto">
+        <form action="index.php?c=admin&a=guardar" class="text-center" enctype="multipart/form-data" method="post" name="producto">
 
             <div class="form-group">
                 <br>

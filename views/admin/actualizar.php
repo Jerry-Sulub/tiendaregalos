@@ -20,7 +20,7 @@ include "template/header.php";
                 <br><br>
                 <label for="comment">Descripción del producto</label id="com">
                 <br>
-                <textarea name="descripcion" id="comment" cols="60" rows="10" resizable="false" value="<?php echo $data["productos"]["descripcion"] ?>"></textarea>
+                <textarea name="descripcion" id="comment" cols="60" rows="10" resizable="false"><?php echo $data["productos"]["descripcion"] ?></textarea>
                 <br><br>
                 <label for="piezas" id="ape">Piezas</label>
                 <input type="text" class="text-center" name="piezas" id="piezas" value="<?php echo $data["productos"]["piezas"] ?>">
@@ -33,7 +33,7 @@ include "template/header.php";
             </div>
             <div class="form-group"><br>
                 <label for="im" id="im">Imagen</label>
-                <input type="file" name="imagen" id="im" value="<?php echo $data["productos"]["img"] ?>">
+                <input type="file" name="imagen" id="im">
             </div>
             <a id="btn">
                 Enviar

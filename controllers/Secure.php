@@ -17,12 +17,12 @@ class SecureController
         $user = $_POST['user'];
         $pass = $_POST['pass'];
         $pass1 = User::getPassUser($user);
-        if(md5($pass) == $pass1)
-        {
+
+        if (md5($pass) == $pass1) {
             session_start();
             $_SESSION['auth'] = 1;
             header('location: index.php?c=admin');
-        }else{
+        } else {
             header('location: index.php?c=secure');
         }
     }

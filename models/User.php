@@ -7,6 +7,11 @@ class User
         $con = Conectar::conexion();
         $q = "SELECT * FROM usuario WHERE nombre='$name'";
         $re = $con->query($q);
-        return $re->fetch_assoc()['password'];
+        $res = $re->fetch_assoc()['password'];
+        if($res==null){
+            header('location: index.php?c=secure');
+        }else{
+            return $res;
+        }
     }
 }

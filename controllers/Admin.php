@@ -7,7 +7,7 @@ class AdminController
      * 
      * Iniciar con el modelo
      * 
-    */
+     */
     public function __construct()
     {
         require_once 'models/Productos.php';
@@ -17,11 +17,11 @@ class AdminController
      * 
      * Vista principal del administrador
      * 
-    */
+     */
     public function index()
     {
         $productos = new ProductosModel();
-	    $data["productos"] = $productos->getProducts();
+        $data["productos"] = $productos->getProducts();
         require_once 'views/admin/panel.php';
     }
 
@@ -29,9 +29,9 @@ class AdminController
      * 
      * Agregar nuevo producto
      * 
-    */
+     */
     public function nuevo()
-    {  
+    {
         require_once "views/admin/addproductos.php";
     }
 
@@ -72,12 +72,12 @@ class AdminController
      * 
      * Borrar Producto
      * 
-    */
+     */
     public function borrar()
     {
         $regalos = new ProductosModel();
-		$data["regalos"] = $regalos->getProducts();
-		require_once "views/admin/eliminar.php";
+        $data["regalos"] = $regalos->getProducts();
+        require_once "views/admin/eliminar.php";
     }
 
     public function eliminar($id)
@@ -91,14 +91,13 @@ class AdminController
      * 
      * Modificar producto
      * 
-    */
+     */
     public function modificar($id)
     {
         $productos = new ProductosModel();
 
         $data["id"] = $id;
         $data["productos"] = $productos->getProduct($id);
-        $data["regalos"] = "Regalos";
         require_once "views/admin/actualizar.php";
     }
     public function actualizar()
@@ -110,17 +109,11 @@ class AdminController
         $precio = $_POST['precio'];
         $tipo = $_POST['tipo'];
 
-        if(!isset($_POST['img']))
-        {
-            $img = ProductosModel::getImage($id);
-            $productos = new ProductosModel();
-            $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo);
-        }else{
-            $imga = $_POST['img'];
-            $temp = $_FILES['imagen']['tmp_name'];
-            $rutaServer = 'resources/';
-            $image_name = $_FILES['imagen']['name'];
+        $temp = $_FILES['imagen']['tmp_name'];
+        $rutaServer = 'resources/';
+        $image_name = $_FILES['imagen']['name'];
 
+        if (!($_FILES['imagen']['name'] == "")) {
             date_default_timezone_set('UTC');
             $nameUnic = date('Y-m-d-h-i-s') . $image_name;
 
@@ -130,7 +123,11 @@ class AdminController
                 move_uploaded_file($temp, $rutaServer . $nameUnic);
             }
             $productos = new ProductosModel();
-            $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $imga, $tipo);
+            $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $rutaServer . $nameUnic, $tipo);
+        } else {
+            $p = ProductosModel::getImage($id);
+            $productos = new ProductosModel();
+            $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $p, $tipo);
         }
         $this->index();
     }
