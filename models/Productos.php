@@ -33,8 +33,9 @@ class ProductosModel
         }
         return $this->productos;
     }
-
+    
     public function delete($id){
         $resultado = $this->db->query("DELETE FROM productos WHERE ID = '$id'");
     }
+
 }
