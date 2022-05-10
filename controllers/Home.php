@@ -5,13 +5,13 @@ class HomeController {
     public function __construct()
     {
         //Agregar el archivo de modelo
-        require_once "models/AnadruModel.php";
+        require_once "models/Productos.php";
     }
 
     public function index()
     {
-        $productos = new Anadru_model();
-	    $data["productos"] = $productos->get_productos();
+        $productos = new ProductosModel();
+	    $data["productos"] = $productos->getProductos();
 
         require_once "views/public/home.php";
     }
@@ -26,7 +26,7 @@ class HomeController {
     /* Vista */
     public function nuevo()
     {
-        require_once "views/admin/addproductos.html";
+        require_once "views/admin/addproductos.php";
     }
 
     public function guardar()
@@ -62,5 +62,17 @@ class HomeController {
         );
     }
 
+    public function delete()
+    {
+        $regalos = new ProductosModel();
+		$data["regalos"] = $regalos->getProductos();
+		require_once "views/admin/eliminar.php";
+    }
+
+    public function eliminar($id){
+        $regalos = new ProductosModel();
+        $regalos->delete($id);
+        $this->index();
+    }
 }
-?>
+
