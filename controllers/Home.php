@@ -56,4 +56,17 @@ class HomeController {
         );
     }
 
+    public function delete()
+    {
+    $regalos = new tiendaRegalos_model();
+			$data["regalos"] = $regalos->get_regalos();
+			require_once "views/public/eliminar.php";
+    }
+
+    public function eliminar($id){
+        $regalos = new tiendaRegalos_model();
+        $regalos->eliminar($id);
+        $this->index();
+    }
 }
+
