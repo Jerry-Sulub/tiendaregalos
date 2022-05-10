@@ -15,7 +15,7 @@
     </div>
     <div class="menuPanel">
       <a href="index.php?c=admin&a=nuevo">Agregar</a>
-      <a href="index.php?c=admin&a=borrar">Eliminar</a>
+      <a href="index.php?c=admin&a=borrar">Editar/Eliminar</a>
     </div>
     <div class="cerrar">
       <a href="index.php?c=secure&a=logout">Cerrar sesión</a>
