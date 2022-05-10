@@ -17,8 +17,8 @@ class HomeController {
     }
     public function panel()
     {
-        $productos = new Anadru_model();
-	    $data["productos"] = $productos->get_productos();
+        $productos = new Productosmodel();
+	    $data["productos"] = $productos->getProductos();
 
         require_once "views/admin/panel.php";
     }

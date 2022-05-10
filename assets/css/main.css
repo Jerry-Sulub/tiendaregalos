@@ -107,7 +107,6 @@ input[type="submit"]:hover{
     font-weight: bold;
     border-radius: 5px;
 }
-
 /*****************home********************/
 .vistaProducto{
     display: inline-block;
@@ -222,4 +221,19 @@ input[type="submit"]:hover{
 }
 .contactos a img{
     width: 40px;
+}
+
+/**************Tabla panel***************/
+.tablaPanel{
+    width: 1000px;
+    border-spacing: 0px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.tablaPanel th{
+    border: 1px solid  rgb(248, 181, 36);
+    background-color: beige;
+    padding: 5px;
+    text-align: center;
 }
