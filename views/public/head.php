@@ -2,7 +2,7 @@
 <div class="head">
   <div class="ancho">
     <div class="logo">
-      <a href="../admin/login.php"><img src="assets/images/logo_anadru.png" alt=""></a>
+      <a href="admin/login.php"><img src="assets/images/logo_anadru.png" alt=""></a>
     </div>
     <div class="busqueda">
       <form action="" id="busqueda" method="GET">

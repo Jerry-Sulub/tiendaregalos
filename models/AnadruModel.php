@@ -18,7 +18,14 @@ class Anadru_model {
     $row = $resultado->fetch_assoc();
     return $this->usuario;
   } */
-
+ /*  public function search_producto($busqueda)
+  {
+    $sql = "SELECT * FROM productos WHERE nombre LIKE '%$busqueda'";
+    $consulta = $this->db->query($sql);
+    while($row = $consulta->fetch_array()){
+      echo $row['nombre']."<br>";
+  }
+ */
   public function get_productos()
   {
     $sql = "SELECT * FROM productos";
