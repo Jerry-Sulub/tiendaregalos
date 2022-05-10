@@ -51,4 +51,9 @@ class ProductosModel
         $row = $resultado->fetch_assoc();
         return $row;
     }
+
+    public function updateProduct($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo)
+    {
+        $resultado = $this->db->query("UPDATE productos SET id='$id', nombre='$nombre',descripcion='$descripcion',piezas='$piezas',precio='$precio', img='$img', tipo='$tipo' WHERE id = '$id'");
+    }
 }

@@ -26,4 +26,10 @@ class SecureController
             header('location: index.php?c=secure');
         }
     }
+
+    public function logout()
+    {
+        session_start();
+        session_destroy();
+    }
 }
