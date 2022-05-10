@@ -52,4 +52,8 @@
     <br>
 </body>
 
+    <?php
+        include "foot.php";
+    ?>
+    </body>
 </html>
