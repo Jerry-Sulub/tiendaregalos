@@ -201,3 +201,19 @@ input[type="submit"]:hover{
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+/********FOOT**********/
+.foot{
+    margin-top: 20px;
+    background-color: beige;
+    border-top: 3px solid rgb(245, 200, 0);
+}
+.contactos a{
+    display: inline-block;
+    padding: 8px 1px;
+    width: 20px;
+    text-align: left;
+}
+.contactos a img{
+    width: 20px;
+}
