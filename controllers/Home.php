@@ -20,7 +20,7 @@ class HomeController {
     /* Vista */
     public function nuevo()
     {
-        require_once "views/admin/addproductos.html";
+        require_once "views/admin/addproductos.php";
     }
 
     public function guardar()
