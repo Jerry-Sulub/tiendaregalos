@@ -22,4 +22,19 @@ class ProductosModel
 
         return $flag;
     }
+
+    public function getProductos()
+    {
+        $sql = "SELECT * FROM productos";
+        $resultado = $this->db->query($sql);
+        while($row = $resultado->fetch_assoc())
+        {
+            $this->productos[] = $row;
+        }
+        return $this->productos;
+    }
+
+    public function delete($id){
+        $resultado = $this->db->query("DELETE FROM productos WHERE ID = '$id'");
+    }
 }
