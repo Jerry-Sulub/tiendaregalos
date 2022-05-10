@@ -56,4 +56,12 @@ class ProductosModel
     {
         $resultado = $this->db->query("UPDATE productos SET id='$id', nombre='$nombre',descripcion='$descripcion',piezas='$piezas',precio='$precio', img='$img', tipo='$tipo' WHERE id = '$id'");
     }
+
+    public static function getImage($id) : string
+    {
+        $con = Conectar::conexion();
+        $q = "SELECT * FROM productos WHERE ID='$id'";
+        $re = $con->query($q);
+        return $re->fetch_assoc()['img'];
+    }
 }

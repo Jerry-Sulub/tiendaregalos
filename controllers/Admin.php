@@ -65,6 +65,7 @@ class AdminController
             $rutaServer . $nameUnic,
             $tipo
         );
+        $this->index();
     }
 
     /**
@@ -111,9 +112,25 @@ class AdminController
 
         if(!isset($_POST['img']))
         {
+            $img = ProductosModel::getImage($id);
             $productos = new ProductosModel();
-            $productos->modificar($id, $nombre, $descripcion, $piezas, $precio, '', $tipo);
-            $data["regalos"] = "Regalos";    
+            $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo);
+        }else{
+            $img = $_POST['img'];
+            $temp = $_FILES['imagen']['tmp_name'];
+            $rutaServer = 'resources/';
+            $image_name = $_FILES['imagen']['name'];
+
+            date_default_timezone_set('UTC');
+            $nameUnic = date('Y-m-d-h-i-s') . $image_name;
+
+            $tipofoto = $_FILES['imagen']['type'];
+
+            if ($tipofoto == "image/jpeg" or $tipofoto == "image/png" or $tipofoto == "image/gif" or $tipofoto == "image/jpg" or $image_name == "") {
+                move_uploaded_file($temp, $rutaServer . $nameUnic);
+            }
+            $productos = new ProductosModel();
+            $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo);
         }
         $this->index();
     }
