@@ -73,13 +73,14 @@ class HomeController
         $descripcion = $_POST['descripcion'];
         $piezas = $_POST['piezas'];
         $precio = $_POST['precio'];
-        $img = $_POST['img'];
         $tipo = $_POST['tipo'];
 
-        //Invocar a datos almacenados
-        $productos = new ProductosModel();
-        $productos->modificar($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo);
-        $data["regalos"] = "Regalos";
+        if(!isset($_POST['img']))
+        {
+            $productos = new ProductosModel();
+            $productos->modificar($id, $nombre, $descripcion, $piezas, $precio, '', $tipo);
+            $data["regalos"] = "Regalos";    
+        }
         $this->index();
     }
 
