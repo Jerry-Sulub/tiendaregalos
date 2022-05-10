@@ -60,7 +60,7 @@ class HomeController {
     {
         $regalos = new ProductosModel();
 		$data["regalos"] = $regalos->getProductos();
-		require_once "views/public/eliminar.php";
+		require_once "views/admin/eliminar.php";
     }
 
     public function eliminar($id){
