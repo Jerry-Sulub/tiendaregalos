@@ -244,6 +244,9 @@ body{
 }
 
 /**************Tabla panel***************/
+table{
+    text-decoration: none;
+}
 .tablaPanel{
     width: 1000px;
     border-spacing: 0px;
