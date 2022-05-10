@@ -30,12 +30,12 @@ body{
     text-align: center;
     vertical-align: 25px;
 }
-input[type="text"]{
+.agregar input[type="text"]{
     border: #ccc 1px solid;
     padding: 10px 5px; 
     width: 530px;
 }
-input[type="submit"]{
+.agregar input[type="submit"]{
     border: none;
     border-radius: 3px;
     padding: 12px 30px;
@@ -43,7 +43,7 @@ input[type="submit"]{
     color: white;
     font-weight: 600;
 }
-input[type="submit"]:hover{
+.agregar input[type="submit"]:hover{
     border: none;
     border-radius: 3px;
     padding: 12px 30px;
