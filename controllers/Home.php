@@ -28,6 +28,15 @@ class HomeController {
     {
         require_once "views/admin/addproductos.html";
     }
+   /*  public function buscar()
+    {
+        $productos = new Anadru_model();
+        $data["productos"] = $productos->search_producto($busqueda);
+        if(isset($_GET['enviar'])){
+            $busqueda = $_GET['buscador'];
+        }
+        require_once "views/public/home.php";
+    } */
 
     public function guardar()
     {
