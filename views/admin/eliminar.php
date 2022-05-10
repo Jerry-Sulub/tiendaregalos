@@ -45,9 +45,9 @@
                             echo "<td><img src=".$dato["img"]." ></td>";
 							echo "<td>".$dato["tipo"]."</td>";
 
-							echo "<td><a href='index.php?c=home&a=modificar&id=".$dato["ID"]."' class='btn btn-danger'>Modificar</a></td>";
+							echo "<td><a href='index.php?c=admin&a=modificar&id=".$dato["ID"]."' class='btn btn-danger'>Modificar</a></td>";
 							
-							echo "<td><a href='index.php?c=home&a=eliminar&id=".$dato["ID"]."' class='btn btn-danger'>Eliminar</a></td>";
+							echo "<td><a href='index.php?c=addmin&a=eliminar&id=".$dato["ID"]."' class='btn btn-danger'>Eliminar</a></td>";
 							echo "</tr>";
 						}
 						?>
