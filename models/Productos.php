@@ -33,6 +33,9 @@ class ProductosModel
         }
         return $this->productos;
     }
+    public function editar($id){
+        $resultado = $this->db->query("UPDATE productos SET ID = '$id'");
+    }
     
     public function delete($id){
         $resultado = $this->db->query("DELETE FROM productos WHERE ID = '$id'");
