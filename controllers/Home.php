@@ -13,7 +13,7 @@ class HomeController
     {
         $productos = new ProductosModel();
         $data["titulo"] = "Productos";
-         $data["productos"] = $productos->getProductos();
+        $data["productos"] = $productos->getProductos();
 
         require_once "views/public/home.php";
     }
@@ -62,7 +62,7 @@ class HomeController
         $productos = new ProductosModel();
 
         $data["id"] = $id;
-        $data["productos"] = $productos-> get_productos($id);
+        $data["productos"] = $productos->get_productos($id);
         $data["regalos"] = "Regalos";
         require_once "views/admin/actualizar.php";
     }
