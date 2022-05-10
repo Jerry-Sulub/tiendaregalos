@@ -12,7 +12,8 @@ class HomeController
     public function index()
     {
         $productos = new ProductosModel();
-        $data["productos"] = $productos->getProductos();
+        $data["titulo"] = "Productos";
+         $data["productos"] = $productos->get_productos();
 
         require_once "views/public/home.php";
     }
@@ -56,12 +57,34 @@ class HomeController
         );
     }
     //Funcion modifica
-    public function editar($id)
+    public function modificar($id)
     {
+        $productos = new ProductosModel();
+
         $data["id"] = $id;
+        $data["productos"] = $productos-> get_productos($id);
         $data["regalos"] = "Regalos";
         require_once "views/admin/actualizar.php";
     }
+    public function actualizar()
+    {
+
+        $id = $_POST['ID'];
+        $nombre = $_POST['nombre'];
+        $descripcion = $_POST['descripcion'];
+        $piezas = $_POST['piezas'];
+        $precio = $_POST['precio'];
+        $img = $_POST['img'];
+        $tipo = $_POST['tipo'];
+
+        //Invocar a datos almacenados
+        $productos = new ProductosModel();
+        $productos->get_productos($id);
+        $data["productos"] = $productos;
+        $data["regalos"] = "Regalos";
+        $this->index();
+    }
+
 
     public function delete()
     {
