@@ -1,0 +1,48 @@
+<?php
+session_start();
+    if(!isset($_SESSION['auth']))
+    {
+        header('location: index.php?c=secure');
+    }
+    include "template/header.php";
+?>
+    <form action="index.php?c=admin&a=actualizar" class="text-center" enctype="multipart/form-data" method="post" name="producto" autocomplete="off">
+
+        <input type="hidden" id="id" name="id" value="<?php echo $data["id"]; ?> " />
+
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="text-center" id="name" name="nombre" value="<?php echo $data["productos"]["nombre"] ?>">
+            <br>
+            <label for="comment">Descripción del producto</label id="com">
+            <br>
+            <textarea name="descripcion" id="comment" cols="60" rows="10" resizable="false" value="<?php echo $data["productos"]["descripcion"] ?>"></textarea>
+            <br>
+            <label for="piezas" id="ape">Piezas</label>
+            <input type="text" class="text-center" name="piezas" id="piezas" value="<?php echo $data["productos"]["piezas"] ?>">
+            <br>
+            <label for="precio" id="ape">Precio</label>
+            <input type="text" class="text-center" name="precio" id="precio" value="<?php echo $data["productos"]["precio"] ?>">
+            <br>
+            <label for="tipo" id="ape">Tipo</label>
+            <input type="text" class="text-center" name="tipo" id="tipo" value="<?php echo $data["productos"]["tipo"] ?>">
+        </div>
+        <div class="form-group">
+            <label for="im" id="im">Imagen</label>
+            <input type="file" name="imagen" id="im" value="<?php echo $data["productos"]["img"] ?>">
+        </div>
+        <a id="btn" style="background-color: red; padding: 10px; margin-top: 20px; display: block; width: 50px; border-radius: 10px; color: white;">
+            Enviar
+        </a>
+    </form>
+
+    <script>
+        let a = document.getElementById('btn');
+
+        a.addEventListener('click', event => {
+            document.producto.submit();
+        });
+    </script>
+</body>
+
+</html>

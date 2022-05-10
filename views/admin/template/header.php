@@ -14,12 +14,11 @@
       <img src="assets/images/logo_anadru.png" alt="">
     </div>
     <div class="menuPanel">
-      <a href="index.php?c=home&a=nuevo">Agregar</a>
-      <a href="#">Actualizar</a>
-      <a href="index.php?c=home&a=delete">Eliminar</a>
+      <a href="index.php?c=admin&a=nuevo">Agregar</a>
+      <a href="index.php?c=admin&a=borrar">Eliminar</a>
     </div>
     <div class="cerrar">
-      <a href="">Cerrar sesión</a>
+      <a href="index.php?c=secure&a=logout">Cerrar sesión</a>
     </div>
   </div>
 </div>

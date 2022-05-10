@@ -200,7 +200,15 @@ input[type="submit"]:hover{
     font-weight: 600;
     margin-bottom: 10px;
 }
-
+/* Css boton agregar */
+.btn_agregar{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: blue;
+    border-radius: 5px
+}
 /********FOOT**********/
 .foot{
     margin-top: 20px;
