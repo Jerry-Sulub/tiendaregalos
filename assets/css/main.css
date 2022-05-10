@@ -208,6 +208,12 @@ input[type="submit"]:hover{
     background-color: beige;
     border-top: 3px solid rgb(245, 200, 0);
 }
+.contactos{
+    display: inline-block;
+    width: 390px;
+    margin: 2px;
+    border: 1px solid;
+}
 .contactos a{
     display: inline-block;
     padding: 8px 1px;
@@ -215,5 +221,5 @@ input[type="submit"]:hover{
     text-align: left;
 }
 .contactos a img{
-    width: 20px;
+    width: 40px;
 }
