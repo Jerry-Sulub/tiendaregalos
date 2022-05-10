@@ -8,14 +8,11 @@
     <title>ANADRU</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-    <?php
+<?php
     include "head.php";
     ?>
     <br>
-    
-
 
     <div class="ancho">
         <?php
@@ -47,11 +44,5 @@
         }
         ?>
     </div>
-    <br>
-</body>
-
-    <?php
-        include "foot.php";
-    ?>
     </body>
 </html>
