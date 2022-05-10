@@ -209,6 +209,18 @@ body{
     background-color: blue;
     border-radius: 5px
 }
+#btn{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(245, 200, 0);
+    color: white;
+    padding: 10px 25px ;
+    margin-top: 25px;
+    border-radius: 7px;
+}
 /********FOOT**********/
 .foot{
     margin-top: 20px;

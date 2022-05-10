@@ -32,7 +32,7 @@ include "template/header.php";
                 <label for="im" id="im">Imagen</label>
                 <input type="file" name="imagen" id="im">
             </div>
-            <a id="btn" style="background-color: red; padding: 10px; margin-top: 20px; display: block; width: 50px; border-radius: 10px; color: white;">
+            <a id="btn">
                 Enviar
             </a>
         </form>
