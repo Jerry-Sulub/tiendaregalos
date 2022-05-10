@@ -13,7 +13,7 @@ class HomeController
     {
         $productos = new ProductosModel();
         $data["titulo"] = "Productos";
-         $data["productos"] = $productos->get_productos();
+         $data["productos"] = $productos->getProductos();
 
         require_once "views/public/home.php";
     }
@@ -68,8 +68,7 @@ class HomeController
     }
     public function actualizar()
     {
-
-        $id = $_POST['ID'];
+        $id = $_POST['id'];
         $nombre = $_POST['nombre'];
         $descripcion = $_POST['descripcion'];
         $piezas = $_POST['piezas'];
@@ -79,8 +78,7 @@ class HomeController
 
         //Invocar a datos almacenados
         $productos = new ProductosModel();
-        $productos->get_productos($id);
-        $data["productos"] = $productos;
+        $productos->modificar($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo);
         $data["regalos"] = "Regalos";
         $this->index();
     }
