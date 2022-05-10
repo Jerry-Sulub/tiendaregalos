@@ -116,7 +116,7 @@ class AdminController
             $productos = new ProductosModel();
             $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo);
         }else{
-            $img = $_POST['img'];
+            $imga = $_POST['img'];
             $temp = $_FILES['imagen']['tmp_name'];
             $rutaServer = 'resources/';
             $image_name = $_FILES['imagen']['name'];
@@ -130,7 +130,7 @@ class AdminController
                 move_uploaded_file($temp, $rutaServer . $nameUnic);
             }
             $productos = new ProductosModel();
-            $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo);
+            $productos->updateProduct($id, $nombre, $descripcion, $piezas, $precio, $imga, $tipo);
         }
         $this->index();
     }
