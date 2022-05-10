@@ -20,7 +20,7 @@
                 <th>Piezas</th>
                 <th>Precio</th>
                 <th>Tipo</th>
-                <th class="img_tabla">Imagen</th>
+                <th>Imagen</th>
             </tr>
             <?php
                 foreach($data["productos"] as $dato){
