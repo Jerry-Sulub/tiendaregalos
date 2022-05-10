@@ -6,7 +6,6 @@ if (!isset($_SESSION['auth'])) {
 }
 include "template/header.php";
 ?>
-<br><br>
 <div class="ancho">
     <div class="agregar">
         <form action="index.php?c=home&a=guardar" class="text-center" enctype="multipart/form-data" method="post" name="producto">
@@ -38,6 +37,7 @@ include "template/header.php";
             </a>
         </form>
     </div>
+    <br>
 </div>
 <script>
     let a = document.getElementById('btn');
