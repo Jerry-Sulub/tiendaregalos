@@ -7,13 +7,15 @@
 	*/
 
 	class Conectar {
-		
+	
 		public static function conexion(){
-			
-			/*Conexion */
-			$conexion = new mysqli("localhost", "root", "", "tiendaregalos");
+			$conexion = new mysqli(
+				"localhost", 
+				"root", 
+				"", 
+				"tiendaregalos"
+			);
 			return $conexion;
-			
 		}
 	}
 ?>

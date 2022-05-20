@@ -1,24 +1,23 @@
 <?php
 
-class HomeController {
-
+class HomeController
+{
     public function __construct()
     {
-        require_once "models/RegalosModel.php";
+        /**
+         * 
+         * Agregar el modelo productos
+         * 
+         */
+        require_once "models/Productos.php";
     }
 
     public function index()
     {
-			$regalos = new tiendaRegalos_model();
-			$data["regalos"] = $regalos->get_regalos();
-			require_once "views/public/eliminar.php";
-    }
+        $productos = new ProductosModel();
+        $data["titulo"] = "Productos";
+        $data["productos"] = $productos->getProducts();
 
-    public function eliminar($id){
-        $regalos = new tiendaRegalos_model();
-        $regalos->eliminar($id);
-        $this->index();
+        require_once "views/public/home.php";
     }
-
 }
-

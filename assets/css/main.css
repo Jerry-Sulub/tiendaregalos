@@ -3,19 +3,270 @@
     padding: 0;
     margin: 0;
 }
-.titulo {
-    display: block;
-    margin: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
+body{
+    font-family: Helvetica;
 }
 .ancho{
     width: 1200px;
+    text-align: center;
+    margin: 0 auto;
 }
 .head{
-    background-color: rgba(255, 230, 0, 0.966);
-    
+    background-color: beige;
+    border-bottom: 3px solid rgb(245, 200, 0);
 }
-loc{
-    
+.logo{
+    display: inline-block;
+    padding: 8px 1px;
+    width: 200px;
+    text-align: left;
+}
+.logo img{
+    width: 200px;
+}
+.busqueda{
+    display: inline-block;
+    width: 970px;
+    text-align: center;
+    vertical-align: 25px;
+}
+.agregar input[type="text"]{
+    border: #ccc 1px solid;
+    padding: 10px 5px; 
+    width: 530px;
+}
+.agregar input[type="submit"]{
+    border: none;
+    border-radius: 3px;
+    padding: 12px 30px;
+    background-color: rgb(248, 181, 36);
+    color: white;
+    font-weight: 600;
+}
+.agregar input[type="submit"]:hover{
+    border: none;
+    border-radius: 3px;
+    padding: 12px 30px;
+    background-color: rgb(245, 200, 0);
+    color: white;
+    font-weight: 600;
+}
+.menu{
+    display: inline-block;
+    width: 450px;
+    text-align: right;
+}
+.menu a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 10px;
+    vertical-align: 25px;
+}
+.menu a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(245, 200, 0);
+}
+
+/*****************cabecera2********************/
+
+.menuPanel{
+    display: inline-block;
+    width: 810px;
+    text-align: center;
+}
+.menuPanel a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 30px;
+    vertical-align: 18px;
+}
+.menuPanel a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(245, 200, 0);
+}
+.cerrar{
+    display: inline-block;
+    width: 120px;
+    vertical-align: 18px;
+    text-align: center;
+}
+.cerrar a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(248, 181, 36);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cerrar a:hover{
+    background-color: rgb(245, 200, 0);
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/*****************home********************/
+.vistaProducto{
+    display: inline-block;
+    width: 285px;
+    height: 360px;
+    box-shadow: 0px 1px 5px #aaa;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.imgProducto{
+    width: 260px;
+    height: 205px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.imgProducto img{
+    width: 100%;
+    height: 200px;
+    box-shadow: 0px 1px 5px #aaa;
+    border-radius: 5px;
+}
+.infoProducto{
+    width: 280px;
+    height: 150px;
+    border-top: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+.infoProducto p{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.infoProducto a{
+    text-decoration: none;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 30px;
+    background-color: rgb(248, 181, 36);
+    color: white;
+    font-weight: 600;
+}
+.infoProducto a:hover{
+    background-color: rgb(245, 200, 0);
+}
+
+/*VISTA CONTACTO*/
+.contMapa{
+    display: inline-block;
+    width: 500px;
+}
+
+/***********Login**********/
+.login{
+    display: inline-block;
+    text-align: center;
+    width: 380px;
+    height: 380px;
+    margin: 50px 0px 50px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 8px #aaa;
+    background-color: white;
+}
+.login img{
+    width: 75%;
+    margin: 20px 0px 20px;
+}
+.login input[type="text"], .login input[type="password"]{
+    display: inline-block;
+    border: #ccc 1px solid;
+    padding: 10px 5px; 
+    width: 330px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+.login input[type="submit"]{
+    display: inline-block;
+    width: 330px;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    background-color: rgb(248, 181, 36);
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* Css boton agregar */
+.btn_agregar{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: blue;
+    border-radius: 5px
+}
+#btn{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(245, 200, 0);
+    color: white;
+    padding: 10px 25px ;
+    margin-top: 25px;
+    border-radius: 7px;
+}
+/********FOOT**********/
+.foot{
+    margin-top: 20px;
+    background-color: beige;
+    border-top: 3px solid rgb(245, 200, 0);
+}
+.contactos{
+    display: inline-block;
+    width: 390px;
+    margin: 2px;
+    border: 1px solid;
+}
+.contactos a{
+    display: inline-block;
+    padding: 8px 1px;
+    width: 20px;
+    text-align: left;
+}
+.contactos a img{
+    width: 40px;
+}
+
+/**************Tabla panel***************/
+table{
+    text-decoration: none;
+}
+.tablaPanel{
+    width: 1000px;
+    border-spacing: 0px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.tablaPanel th{
+    border: 0.5px solid  rgb(248, 181, 36);
+    background-color: beige;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px 3px 0px 0px;
+}
+.tablaPanel td{
+    border: 1px solid  rgb(248, 181, 36);
+    padding: 5px;
+    text-align: center;
+}
+td img{
+    width: 100px;
 }
