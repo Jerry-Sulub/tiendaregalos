@@ -270,3 +270,50 @@ table{
 td img{
     width: 100px;
 }
+/**********************vista ver producto*********************/
+.productover{
+    width: 1000px;
+    padding: 20px;
+    box-shadow: 1px 1px 6px #aaa;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.imgProducto2{
+    display: inline-block;
+    width: 370px;
+    height: 350px;
+    border-right: 1px solid #aaa;
+    vertical-align: top;
+    text-align: center;
+}
+.imgProducto2 img{
+    width: 100%;
+    height: 240px;
+    box-shadow: 0px 1px 5px #aaa;
+    border-radius: 5px;
+}
+.infoProducto2{
+    display: inline-block;
+    width: 580px;
+    height: 355px;
+}
+.infoProducto2 p{
+    margin: 10px;
+    font-size: 25px;
+}
+.des{
+    font-weight: bold;
+    color: #333;
+}
+.infoProducto2 .precio{
+    font-size: 27px;
+    margin: 15px;
+}
+.paga{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}

@@ -20,4 +20,12 @@ class HomeController
 
         require_once "views/public/home.php";
     }
+
+    public function showProduct($id){
+
+        $productos = new ProductosModel();
+        
+        $data= $productos->getProduct($id);
+        require_once "views/public/verProducto.php";
+    }
 }
