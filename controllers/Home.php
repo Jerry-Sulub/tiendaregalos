@@ -24,6 +24,8 @@ class HomeController
     }
 
     public function showProduct($id){
+        $clima = new Clima();
+        $resClim = $clima->getClima();
 
         $productos = new ProductosModel();
         
