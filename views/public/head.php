@@ -15,6 +15,8 @@
     <div class="logo">
       <a href="index.php?c=secure"><img src="assets/images/logo_anadru.png" alt=""></a>
     </div>
-    </div>
+      <p><?= 'Clima de ' . $resClim->name ?></p>
+      <p><?= 'Temp. Min: ' . $resClim->main->temp_min . '°C,  Temp. Max: ' . $resClim->main->temp_max . '°C' ?></p>
+      <p><?= 'Humedad: ' . $resClim->main->humidity . '%,  Viento: ' . $resClim->wind->speed; ?> km/h</p>
   </div>
 </div>

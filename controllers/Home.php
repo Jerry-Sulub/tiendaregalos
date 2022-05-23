@@ -14,6 +14,8 @@ class HomeController
 
     public function index()
     {
+        $clima = new Clima();
+        $resClim = $clima->getClima();
         $productos = new ProductosModel();
         $data["titulo"] = "Productos";
         $data["productos"] = $productos->getProducts();

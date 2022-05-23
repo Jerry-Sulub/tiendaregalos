@@ -100,6 +100,7 @@ class AdminController
         $data["productos"] = $productos->getProduct($id);
         require_once "views/admin/actualizar.php";
     }
+
     public function actualizar()
     {
         $id = $_POST['id'];
