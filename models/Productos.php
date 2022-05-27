@@ -40,8 +40,13 @@ class ProductosModel
     public function deleteProduct($id){
         $link = $this->db->query("SELECT img FROM productos WHERE ID = '$id'");
         $result = $link->fetch_assoc()['img'];
-        unlink($result);
-        $resultado = $this->db->query("DELETE FROM productos WHERE ID = '$id'");
+        try {
+            unlink($result);
+        } catch (Exception $e){
+            echo 'Imagen no encontrada';
+        } finally {
+            $resultado = $this->db->query("DELETE FROM productos WHERE ID = '$id'");
+        }
     }
 
     public function getProduct($id)
@@ -52,9 +57,10 @@ class ProductosModel
         return $row;
     }
 
-    public function updateProduct($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo)
+    public function updateProduct($id, $nombre, $descripcion, $piezas, $precio, $img, $tipo) : bool
     {
         $resultado = $this->db->query("UPDATE productos SET id='$id', nombre='$nombre',descripcion='$descripcion',piezas='$piezas',precio='$precio', img='$img', tipo='$tipo' WHERE id = '$id'");
+        return $resultado;
     }
 
     public static function getImage($id) : string
